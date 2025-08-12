@@ -22,3 +22,10 @@ toggleBtn.addEventListener('click', () => {
     icon.classList.add('fa-moon');
   }
 });
+
+function view_certifications(){
+  window.open("./pages/certificates.html");
+};
+function view_hackthebox(){
+  window.open("./pages/htb.html");
+}
