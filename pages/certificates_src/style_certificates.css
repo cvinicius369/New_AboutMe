@@ -1,8 +1,8 @@
 /* Paleta inspirada em tecnologia */
 :root {
     --bg-dark: rgb(0, 26, 44);
-    --primary: #00d4ff;
-    --secondary: #8a2be2;
+    --primary: #48b400;
+    --secondary: rgb(0, 26, 44);
     --text-light: #e0e0e0;
 }
 
