@@ -78,6 +78,15 @@ body.dark .section-divider {
 
 body.dark .about-photo { background-color: #686868; }
 body.dark .about-photo img { border: 6px solid var(--border-dark); }
+body.dark .service-card, body.dark .about-card, body.dark .botao, body.dark #certifications {
+    background: linear-gradient(90deg, green, black);
+    color: white;
+}
+body.dark .service-card:hover, body.dark .about-card:hover, body.dark .botao, body.dark #certifications:hover {
+    background: linear-gradient(90deg, rgb(0, 255, 0), rgb(12, 99, 0));
+    box-shadow: 0px 0px 15px rgba(49, 226, 43, 0.6);
+    transform: translateY(-2px);
+}
 
 /* Light theme */
 body.light .services { background-color: rgb(213, 230, 253); }
@@ -94,6 +103,15 @@ body.light .section-divider {
 
 body.light .about-photo { background-color: #aab2b6; }
 body.light .about-photo img { border: 6px solid var(--border-light); }
+body.light .service-card, body.light .about-card, body.light .botao, body.light #certifications {
+    background: linear-gradient(90deg, rgb(0, 196, 196), rgb(0, 93, 129));
+    color: white;
+}
+body.light .service-card:hover, body.light .about-card:hover, body.light .botao, body.light #certifications:hover {
+    background: linear-gradient(90deg, rgb(156, 240, 255), rgb(136, 32, 255));
+    box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.6);
+    transform: translateY(-2px);
+}
 
 /*--------------------------------*/
 /*           BANNER               */
@@ -217,7 +235,6 @@ footer {
     display: inline-block;
     margin-top: 0.8rem;
     padding: 0.5rem 1rem;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -225,15 +242,6 @@ footer {
     font-size: 0.95rem;
     box-shadow: 0px 0px 8px rgba(0, 212, 255, 0.4);
     transition: all 0.3s ease;
-}
-
-.service-card:hover,
-.about-card:hover, 
-.botao, 
-#certifications:hover {
-    background: linear-gradient(90deg, var(--secondary), var(--primary));
-    box-shadow: 0px 0px 15px rgba(138, 43, 226, 0.6);
-    transform: translateY(-2px);
 }
 
 .service-card i { font-size: 2rem; margin-bottom: 10px; color: var(--accent-color, #fff); }
