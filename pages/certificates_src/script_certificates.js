@@ -18,6 +18,7 @@ const certifications = {
         { title: "File Transfers",                       description: "Técnicas seguras de transferência de arquivos.", link: "https://academy.hackthebox.com/achievement/1734203/24" },
         { title: "Linux Fundamentals",                   description: "Bases do Linux e segurança em sistemas.",        link: "https://academy.hackthebox.com/achievement/1734203/18" },
         { title: "File Inclusion",                       description: "Técnicas de Inclusão de Arquivos.",              link: "https://academy.hackthebox.com/achievement/1734203/23" },
+        { title: "Web Fuzzing",                          description: "Teste de falhas com dados aleatórios.",          link: "https://academy.hackthebox.com/achievement/1734203/280"},
 
         { title: "Acesse Também!", description: "Minha pagina contendo todas as minhas atividades na HTB.", link: "../pages/htb.html"} 
     ],
