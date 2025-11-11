@@ -56,22 +56,31 @@ const certifications = {
 };
 const cardsContainer = document.getElementById("cards-container");
 const categoryButtons = document.querySelectorAll(".category");
+const themeToggle = document.getElementById("theme-toggle");
+const body = document.body;
+
+// 1. Função de Carregar Cards (Melhorada)
 function loadCards(category) {
     cardsContainer.innerHTML = "";
-    certifications[category].forEach(cert => {
+    const certs = certifications[category] || [];
+    
+    if (certs.length === 0) {
+        cardsContainer.innerHTML = '<p class="no-certs">Nenhum certificado encontrado para esta categoria.</p>';
+        return;
+    }
+
+    certs.forEach(cert => {
         const card = document.createElement("div");
         card.classList.add("card");
-        if(category === "itec"){
-            card.innerHTML = `
-            <h3>${cert.title}</h3>
-            <p>${cert.description}</p>
-        `;
-        } else {
+        const linkHtml = cert.link && cert.link !== "URL_CERTIFICADO_1"
+            ? `<a href="${cert.link}" target="_blank" class="btn-link">Ver Certificado</a>`
+            : '';
+
         card.innerHTML = `
             <h3>${cert.title}</h3>
             <p>${cert.description}</p>
-            <a href="${cert.link}" target="_blank" class="btn-link">Ver Certificado</a>
-        `;}
+            ${linkHtml}
+        `;
         cardsContainer.appendChild(card);
     });
 }
@@ -82,4 +91,29 @@ categoryButtons.forEach(btn => {
         loadCards(btn.dataset.category);
     });
 });
+
+// 3. Lógica de Tema Dark/Light
+function toggleTheme() {
+    body.classList.toggle('light-theme'); 
+    if (body.classList.contains('light-theme')) {
+        themeToggle.textContent = '☀️';
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeToggle.textContent = '🌙';
+        localStorage.setItem('theme', 'dark');
+    }
+}
+function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme') || 'dark'; 
+    if (savedTheme === 'light') {
+        body.classList.add('light-theme');
+        themeToggle.textContent = '☀️';
+    } else {
+        body.classList.remove('light-theme');
+        themeToggle.textContent = '🌙';
+    }
+}
+
+themeToggle.addEventListener('click', toggleTheme);
+initializeTheme();
 loadCards("htb");
