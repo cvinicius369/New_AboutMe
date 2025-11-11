@@ -57,9 +57,9 @@ const certifications = {
     ],
     dio: [
         { title: "Collections e outras Classes em Java",   description: "Praticando a aplicação de Collections e outras classes em java em aplicações do dia a dia corporativo", link: "../pages/certificates/CCinJ.png"},
-        { title: "Interfaces e Lambda",                    description: "Dominando interfaces e Lambda em Java", link: "../pages/certificates/DIinJ.png"},
+        { title: "Interfaces e Lambda",                    description: "Dominando interfaces e Lambda em Java", link: "../pages/certificates/DILinJ.png"},
         { title: "Versionamento git em projetos java",     description: "Fundamentos e técnicas de versionamento git em projetos java", link: "../pages/certificates/VCGG.png"},
-        { title: "Estruturas de controle em java",         description: "Fundamentos de estruturas de controle em Java", link: "../pages/certificate/ECinJ.png"}
+        { title: "Estruturas de controle em java",         description: "Fundamentos de estruturas de controle em Java", link: "../pages/certificates/ECinJ.png"}
     ],
     seventh: [
         { title: "Certificação - D-Guard", description: "Certificação do Software de Video Monitoramento (VMS) D-guard"}
