@@ -23,30 +23,25 @@ const certifications = {
         { title: "Acesse Também!", description: "Minha pagina contendo todas as minhas atividades na HTB.", link: "../pages/htb.html"} 
     ],
     itec: [
-        { title: "CSVDM Certificação",                         description: "Certificação CSVDM para o software DEFENSE IA 3.2 e Lite" },
-        { title: "Redes EPON Certificação",                    description: "Certificação em Redes EPON" },
-        { title: "Sistemas Avançados de CFTV IP",              description: "Certificação em Sistemas Avançados de CFTV IP" },
-        { title: "Casa Inteligente Portfolio",                 description: "Portfolio Casa Inteligente" },
-        { title: "Casa Inteligente Técnico (Cursos 1 e 2)",    description: "Curso Técnico em Casa Inteligente" },
-        { title: "Defense IA Técnico",                         description: "Curso Técnico em Defense IA" },
-        { title: "Dimensionamento Energia Solar",              description: "Curso Técnico em Dimensionamento de Energia Solar" },
-        { title: "Dimensionamento em CFTV IP",                 description: "Curso Técnico em Dimensionamento em CFTV IP" },
-        { title: "Energia Solar On Grid Técnico",              description: "Curso Técnico em Energia Solar On Grid" },
-        { title: "IP UTILITY Técnico",                         description: "Curso técnico sobre utilitários de IP e gerenciamento de rede." },
-        { title: "Radiofrequência e Antenas Técnico",          description: "Curso técnico em radiofrequência e tecnologias de antenas." },
-        { title: "Redes EPON Portfolio",                       description: "Portfolio de projetos e experiências com redes EPON." },
-        { title: "Redes EPON Técnico",                         description: "Curso técnico em redes EPON, tecnologias de acesso óptico." },
-        { title: "Sistemas de CFTV IP Portfolio",              description: "Portfolio em sistemas de CFTV IP, vigilância eletrônica." },
-        { title: "Sistemas de CFTV IP Técnico",                description: "Curso técnico em sistemas de CFTV IP, instalação e manutenção." },
-        { title: "Software Programador CIE",                   description: "Curso técnico sobre o software programador CIE Intelbras"},
-        { title: "Trilha de Aprendizagem - CFTV IP",           description: "Curso estruturado em CFTV IP para aprendizagem contínua." },
-        { title: "Trilha de Aprendizagem - Defense IA",        description: "Curso estruturado em Defense IA para aprimoramento técnico." },
-        { title: "Pilares de uma Gestão Estratégica",          description: "Conceitos sobres os pilares principais da gestão estratégica"},
-        { title: "Integração do SimNEXT com inControl",        description: "Técnicas de integração do software Sim NEXT com o inControl"},
-        { title: "Roteamento IP",                              description: "Implementando o roteamento IP"},
+        { title: "CSVDM Certificação",                         description: "Certificação CSVDM para o software DEFENSE IA 3.2 e Lite",          link: "../pages/certificates/CCSDVMV3.png" },
+        { title: "Redes EPON Certificação",                    description: "Certificação em Redes EPON",                                        link: "../pages/certificates/CRE.png"},
+        { title: "Sistemas Avançados de CFTV IP",              description: "Certificação em Sistemas Avançados de CFTV IP",                     link: "../pages/certificates/CSACFTVIP.png"},
+        { title: "Casa Inteligente Portfolio",                 description: "Portfolio Casa Inteligente",                                        link: "../pages/certificates/PCI.png"},
+        { title: "Casa Inteligente Técnico (Cursos 1 e 2)",    description: "Curso Técnico em Casa Inteligente",                                 link: "../pages/certificates/PCI.png"},
+        { title: "Dimensionamento Energia Solar",              description: "Curso Técnico em Dimensionamento de Energia Solar",                 link: "../pages/certificates/TDES.png"},
+        { title: "Dimensionamento em CFTV IP",                 description: "Curso Técnico em Dimensionamento em CFTV IP",                       link: "../pages/certificates/DFIAT.png"},
+        { title: "Energia Solar On Grid Técnico",              description: "Curso Técnico em Energia Solar On Grid",                            link: "../pages/certificates/PES.png"},
+        { title: "IP UTILITY Técnico",                         description: "Curso técnico sobre utilitários de IP e gerenciamento de rede.",    link: "../pages/certificates/TPUN.png"},
+        { title: "Radiofrequência e Antenas Técnico",          description: "Curso técnico em radiofrequência e tecnologias de antenas.",        link: "../pages/certificates/TRA.png"},
+        { title: "Software Programador CIE",                   description: "Curso técnico sobre o software programador CIE Intelbras",          link: "../pages/certificates/SPCIE.png"},
+        { title: "Trilha de Aprendizagem - CFTV IP",           description: "Curso estruturado em CFTV IP para aprendizagem contínua.",          link: "../pages/certificates/TCFTVIP.png"},
+        { title: "Trilha de Aprendizagem - Defense IA",        description: "Curso estruturado em Defense IA para aprimoramento técnico.",       link: "../pages/certificates/TDIA.png"},
+        { title: "Pilares de uma Gestão Estratégica",          description: "Conceitos sobres os pilares principais da gestão estratégica",      link: "../pages/certificates/PGE.png"},
+        { title: "Integração do SimNEXT com inControl",        description: "Técnicas de integração do software Sim NEXT com o inControl",       link: "../pages/certificates/ISNCSC.png"},
+        { title: "Roteamento IP",                              description: "Implementando o roteamento IP",                                     link: "../pages/certificates/rip.png"},
         { title: "Trillha de Aprendizagem - Modelo OSI e TCP", description: "Fundamentos das camadas principais do modelo OSI e TCP"},
-        { title: "Certificar Redes de pares trançados",        description: "Técnicas para certificar redes de pares trançados"},
-        { title: "Trilha de Aprendizagem - Redes EPON",        description: "Curso estruturado em Redes EPON para aprendizagem contínua." }
+        { title: "Certificar Redes de pares trançados",        description: "Técnicas para certificar redes de pares trançados",                 link: "../pages/certificates/RPT.png"},
+        { title: "Trilha de Aprendizagem - Redes EPON",        description: "Curso estruturado em Redes EPON para aprendizagem contínua.",       link: "../pages/certificates/CREP.png"}
     ],
     anhanguera: [
         { title: "Redes de Computadores e IoT",                       description: "Fundamentos de Redes e Internet das Coisas", link: "../pages/certificates/RCIoT.png"},
@@ -62,7 +57,7 @@ const certifications = {
         { title: "Estruturas de controle em java",         description: "Fundamentos de estruturas de controle em Java", link: "../pages/certificates/ECinJ.png"}
     ],
     seventh: [
-        { title: "Certificação - D-Guard", description: "Certificação do Software de Video Monitoramento (VMS) D-guard"}
+        { title: "Certificação - D-Guard", description: "Certificação do Software de Video Monitoramento (VMS) D-guard", link: "../pages/certificates/CVMSDG.png"}
     ],
     outra: [
         { title: "EM DESENVOLVIMENTO", description: "Desculpe! Ainda estou inserindo novos certificados" }
