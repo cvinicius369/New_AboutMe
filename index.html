@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio | Interactive Experience</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fixed-controls">
+        <button id="theme-toggle"><i class="ri-moon-line"></i></button>
+        <div class="lang-switch">
+        </div>
+    </div>
+
+    <nav class="navbar glass">
+        <div class="logo">&lt;Dev/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+            <li><a href="#terminal" data-i18n="nav_terminal">Terminal</a></li> </ul>
+    </nav>
+
+    <header class="hero" id="vanta-bg home">
+        <div class="hero-overlay"></div> <div class="hero-content fade-in">
+            <p class="greeting" data-i18n="hero_greeting">Olá, eu sou</p>
+            <h1 class="name">Caio Vinicius</h1>
+            <h2 class="title type-effect">Software Engineer</h2> <p class="description glass-text" data-i18n="hero_desc">
+                Arquiteto de sistemas complexos e Inteligencias Artificiais.
+            </p>
+            <div class="hero-btns">
+                <a href="#terminal" class="btn primary" data-i18n="btn_terminal">Abrir Terminal</a>
+                <a href="#projects" class="btn secondary" data-i18n="btn_projects">Ver Projetos</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container fade-up">
+            <h2 class="section-title" data-i18n="about_title">Minha Jornada</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026 - Atual</div>
+                    <div class="timeline-content glass" data-tilt>
+                        <h3>Software Engineer</h3>
+                        <p>Liderando arquitetura de modelos de LLMs e CNNs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content glass" data-tilt>
+                        <h3>Cybersecurity Analyst</h3>
+                        <p>Analise e desenvolvimento de exploits, payloads para testes de intrusão (Pentesting)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content glass" data-tilt>
+                        <h3>Frontend Developer</h3>
+                        <p>Criação de interfaces reativas e experiências 3D na web.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <div class="timeline-content glass" data-tilt>
+                        <h3>Game Design and Mobile Developer</h3>
+                        <p>Criação de design de games e Desenvolvimento de aplicações Mobile.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="skills" class="section">
+    <div class="container fade-up">
+        <h2 class="section-title" data-i18n="skills_title">Domínio Técnico</h2>
+        <p class="section-subtitle" data-i18n="skills_subtitle">Linguagens, Frameworks e Ferramentas que moldam minhas soluções.</p>
+        
+        <div class="skills-matrix">
+            <div class="matrix-group glass" data-tilt>
+                <h3 class="group-title"><i class="ri-server-line"></i> Cybersecurity </h3>
+                <div class="skill-item">
+                    <span>Reverse Engineer and Bypass</span>
+                    <div class="skill-bar"><div style="width: 100%;"></div></div>
+                    <span class="level">Expert</span>
+                </div>
+                <div class="skill-item">
+                    <span>Exploits / Hacking Tools</span>
+                    <div class="skill-bar"><div style="width: 95%;"></div></div>
+                    <span class="level">Avançado</span>
+                </div>
+                <div class="skill-item">
+                    <span>Infra and Network Security</span>
+                    <div class="skill-bar"><div style="width: 70%;"></div></div>
+                    <span class="level">Intermediário</span>
+                </div>
+            </div>
+
+            <div class="matrix-group glass" data-tilt>
+                <h3 class="group-title"><i class="ri-code-s-slash-line"></i> Low-Level Engineer & Systems </h3>
+                <div class="skill-item">
+                    <span>OS Development</span>
+                    <div class="skill-bar"><div style="width: 100%;"></div></div>
+                    <span class="level">Expert</span>
+                </div>
+                <div class="skill-item">
+                    <span>Robotic</span>
+                    <div class="skill-bar"><div style="width: 100%;"></div></div>
+                    <span class="level">Expert</span>
+                </div>
+                <div class="skill-item">
+                    <span>Server Architectures and SGBDs</span>
+                    <div class="skill-bar"><div style="width: 60%;"></div></div>
+                    <span class="level">Intermediário</span>
+                </div>
+            </div>
+
+            <div class="matrix-group glass" data-tilt>
+                <h3 class="group-title"><i class="ri-git-branch-line"></i> IA and Algorithmic Logic</h3>
+                <div class="skill-item">
+                    <span>Neural Networks</span>
+                    <div class="skill-bar"><div style="width: 85%;"></div></div>
+                    <span class="level">Avançado</span>
+                </div>
+                <div class="skill-item">
+                    <span>Trading Bots and Automation</span>
+                    <div class="skill-bar"><div style="width: 90%;"></div></div>
+                    <span class="level">Avançado</span>
+                </div>
+                <div class="skill-item">
+                    <span>Computer Vision and Classification</span>
+                    <div class="skill-bar"><div style="width: 90%;"></div></div>
+                    <span class="level">Avançado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="case-study" class="section dark-mode-bg">
+    <div class="container fade-up">
+        <h2 class="section-title" data-i18n="casestudy_title">Case Study: Problemas Reais</h2>
+        <div class="case-card glass" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+            <div class="case-header">
+                <span class="case-tag" data-i18n="case_tag">Sistema de Segurança</span>
+                <h3 data-i18n="case_title">Como diminui a probabilidade de ataques cibernéticos em sites</h3>
+            </div>
+            <div class="case-body">
+                <p data-i18n="case_summary">
+       Desafio:
+A aplicação apresentava riscos de segurança como SQL Injection, XSS e tentativas de acesso não autorizado à API.
+
+Solução:
+Implementei validação e sanitização de entradas, autenticação com JWT, controle de permissões por middleware, headers de segurança e rate limiting. Com isso, reduzi significativamente a superfície de ataque e aumentei a segurança da aplicação.
+                </p>
+                <ul class="case-details">
+                    <li><i class="ri-check-line"></i> <span data-i18n="case_detail_1">Proteção á mais de 1000 requisições por minuto.</span></li>
+                    <li><i class="ri-check-line"></i> <span data-i18n="case_detail_2">Autenticação com JWT e controle de permissões.</span></li>
+                    <li><i class="ri-check-line"></i> <span data-i18n="case_detail_3">Headers de segurança e rate limiting.</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="strategy-sim" class="section">
+    <div class="container fade-up">
+        <h2 class="section-title" data-i18n="sim_title">Simulador de Resiliência de Sistemas</h2>
+        <p class="section-subtitle" data-i18n="sim_subtitle">Análise de impacto em infraestrutura crítica, ataques e IA.</p>
+
+        <div class="sim-dashboard glass" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+            
+            <div class="sim-control">
+                <h3 data-i18n="sim_controls_title">Parâmetros de Cenário</h3>
+                
+                <div class="control-item">
+                    <label for="users-input" data-i18n="users_label">Volume de Requisições (K):</label>
+                    <input type="range" id="users-input" min="1" max="100" value="10" step="1">
+                    <span id="users-display">10K</span>
+                </div>
+
+                <div class="control-item">
+                    <label for="query-complexity" data-i18n="query_label">Vetor de Ameaça:</label>
+                    <select id="query-complexity">
+                        <option value="1">Baixa (Port Scan/Brute Force)</option>
+                        <option value="5" selected>Média (Malware Injection)</option>
+                        <option value="10">Alta (Bypass de CFTV/Zero-Day)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sim-results">
+                <h3 data-i18n="sim_results_title">Análise de Resiliência</h3>
+                
+                <div class="result-item">
+                    <span data-i18n="latency_label">Tempo de Resposta (Mitigação):</span>
+                    <div class="result-value" id="latency-result">150ms</div>
+                </div>
+
+                <div class="result-item">
+                    <span data-i18n="cost_label">Risco de Breach Estimado:</span>
+                    <div class="result-value cost-high" id="cost-result">15%</div>
+                </div>
+                
+                <p class="strategy-message" id="strategy-message" data-i18n="strategy_default">
+                    **Estratégia Recomendada:** Implementar modelos de detecção baseados em CNN e redes neurais (C++).
+                </p>
+            </div>
+        </div>
+
+        <div class="explanation">
+            <h3 data-i18n="explanation_title">O que isso demonstra?</h3>
+            <ul class="list-demonstration">
+                <li data-i18n="demon_1">**Segurança Ofensiva/Defensiva:** Conhecimento em vetores de ataque e como mitigá-los.</li>
+                <li data-i18n="demon_2">**IA em Baixo Nível:** Uso de C++/Eigen para processar ameaças em tempo real com baixa latência.</li>
+                <li data-i18n="demon_3">**Sistemas Críticos:** Capacidade de arquitetar redes seguras para CFTV e infraestrutura industrial.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">Repositório de Engenharia</h2>
+            <div class="projects-grid">
+                <article class="project-card glass" data-tilt>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="ri-cpu-line"></i></div>
+                        <h3 data-i18n="proj_1_name">OS & Kernel</h3>
+                        <p data-i18n="proj_1_desc">Micro-SO desenvolvido em Assembly e C para arquiteturas x86.</p>
+                        <div class="tags"><span>Assembly</span><span>C</span><span>Low-Level</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card glass" data-tilt>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="ri-shield-keyhole-line"></i></div>
+                        <h3 data-i18n="proj_2_name">AI Malware Classifier</h3>
+                        <p data-i18n="proj_2_desc">CNN treinada para detecção de anomalias e malwares em binários.</p>
+                        <div class="tags"><span>C++</span><span>Eigen</span><span>IA</span></div>
+                    </div>
+                </article>
+
+                <article class="project-card glass" data-tilt>
+                    <div class="card-content">
+                        <div class="card-icon"><i class="ri-spy-line"></i></div>
+                        <h3 data-i18n="proj_3_name">Cyber-Physical Exploits</h3>
+                        <p data-i18n="proj_3_desc">Engenharia reversa e bypass em firmwares de câmeras Intelbras.</p>
+                        <div class="tags"><span>Reverse Eng</span><span>Cybersec</span><span>CFTV</span></div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="terminal" class="section">
+        <div class="container fade-up">
+            <h2 class="section-title">Root Access Terminal</h2>
+            <p class="terminal-intro">Interaja com o sistema. Digite <span class="cmd">help</span>.</p>
+            
+            <div class="terminal-window glass">
+                <div class="terminal-header">
+                    <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                    <span class="terminal-title">caio@dev-machine:~/security-lab</span>
+                </div>
+                <div class="terminal-body" id="terminal-output">
+                    <div class="line">Kernel 6.x loaded. Security modules active.</div>
+                    <div class="line">Unauthorized access is logged.</div>
+                </div>            
+                <div class="terminal-input-area">
+                    <span class="prompt">#</span>
+                    <input type="text" id="cmd-input" autocomplete="off" autofocus>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-me" class="section">
+        <div class="container fade-up">
+            <h2 class="section-title" data-i18n="whyme_title">Por Que Me Contratar?</h2>
+            <div class="value-pitch-grid">
+                <div class="pitch-card glass" data-tilt>
+                    <i class="ri-shield-check-line"></i>
+                    <h3 data-i18n="pitch_1_title">Security by Design</h3>
+                    <p data-i18n="pitch_1_desc">Não apenas escrevo código; protejo ativos. Minha base em Cybersec garante sistemas resilientes a ataques desde a primeira linha.</p>
+                </div>
+                <div class="pitch-card glass" data-tilt>
+                    <i class="ri-coreos-line"></i>
+                    <h3 data-i18n="pitch_2_title">Performance de Baixo Nível</h3>
+                    <p data-i18n="pitch_2_desc">Experiência com C++, Assembly e Eigen para criar soluções de IA e Robótica que rodam onde o hardware é limitado.</p>
+                </div>
+                <div class="pitch-card glass" data-tilt>
+                    <i class="ri-focus-3-line"></i>
+                    <h3 data-i18n="pitch_3_title">Visão Holística</h3>
+                    <p data-i18n="pitch_3_desc">Da eletrônica do Arduino ao treinamento de redes neurais. Entendo a pilha completa do hardware ao software.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container fade-up">
+            <h2 class="section-title">Protocolo de Comunicação</h2>
+            <div class="contact-grid">
+                <div class="contact-info glass" data-tilt>
+                    <h3>Secure Links</h3>
+                    <div class="info-item"><i class="ri-mail-send-line"></i> <span>Email:</span> <a href="mailto:vinicius182102@gmail.com">vinicius182102@gmail.com</a></div>
+                    <div class="info-item"><i class="ri-terminal-box-line"></i> <span>Graduação:</span> <span>Engenharia de Software & Cryptography</span></div>
+                    <div class="social-links">
+                        <a href="https://github.com/cvinicius369" target="_blank" class="social-btn"><i class="ri-github-fill"></i></a>
+                        <a href="#" class="social-btn"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                </div>
+                <div class="whatsapp-form glass" data-tilt>
+                    <h3>Solicitar Briefing Técnico</h3>
+                    <form id="whatsapp-link-generator">
+                        <div class="form-group">
+                            <label>Seu Nome:</label>
+                            <input type="text" id="w-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Área de Interesse:</label>
+                            <select id="w-interest" required>
+                                <option value="Cybersecurity / Pentest">Cybersecurity / Pentest</option>
+                                <option value="IA / Visão Computacional">IA / Visão Computacional</option>
+                                <option value="Robótica / Sistemas Embarcados">Robótica / Sistemas Embarcados</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn primary full-width">Enviar via Canal Seguro (WhatsApp) <i class="ri-whatsapp-line"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
