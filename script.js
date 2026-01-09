@@ -104,6 +104,8 @@ const setupTerminal = () => {
     const input = document.getElementById('cmd-input');
     const output = document.getElementById('terminal-output');
     if (!input) return;
+    let isRoot = false;
+    const secretCommand = "privilege_escalation.sh";
     const commands = {
         help: "Módulos disponíveis: <br>- journey (trajetória)<br>- tech-stack (tecnologias)<br>- pentest (skills ofensivas)<br>- ai-research (ia e redes neurais)<br>- clear (limpar terminal)",
         journey: "Graduado em Eng. de Software, pós em Criptografia/Blockchain. Especialista em sistemas de baixo nível e IA aplicada à segurança.",
@@ -111,18 +113,37 @@ const setupTerminal = () => {
         pentest: "Experiência HTB Academy. Desenvolvimento de Shell Reverse, clones de Meterpreter, bypass em firmwares Intelbras e scripts baseados em WinPEAS.",
         "ai-research": "Desenvolvimento de CNNs do zero (C++) para detecção de anomalias em binários e automação de trading algorítmico.",
         clear: "clear",
-        cls: "clear"
+        cls: "clear",
     };
     input.addEventListener("keydown", function(e) {
         if (e.key === "Enter") {
             const text = input.value.toLowerCase().trim();
             output.innerHTML += `<div class="line"><span class="prompt" style="color: #ff5f56"># root:➜</span> ${input.value}</div>`;
-            if (commands[text]) {
-                if (text === 'clear' || text === 'cls') { output.innerHTML = ""; } 
-                else { output.innerHTML += `<div class="line">${commands[text]}</div>`; }
-            } else if (text !== "") {
-                output.innerHTML += `<div class="line" style="color:#ff5f56">Error: Module '${text}' not found in kernel.</div>`;
-            }
+            if (text === secretCommand) { 
+                isRoot = true;
+                output.innerHTML += `
+                    <div class="line" style="color:#27c93f">
+                        [+] Exploit successful.<br>
+                        [+] UID=0(root) GID=0(root)<br>
+                        [+] Kernel access granted.
+                    </div>
+                    <div class="line">
+                        <strong>Hidden module unlocked:</strong> SYSTEM_DIAGNOSTICS
+                    </div>`;
+            } else if (commands[text]) {
+            if (text === 'clear' || text === 'cls') { output.innerHTML = ""; } 
+            else { output.innerHTML += `<div class="line">${commands[text]}</div>`; }
+        } else if (isRoot && text === "diagnostics") {
+            output.innerHTML += `
+                <div class="line">
+                    Memory: OK<br>
+                    Kernel Modules: Loaded<br>
+                    IDS: Active<br>
+                    Firmware Integrity: Verified
+                </div>
+            `;
+        } else if (text !== "") {
+            output.innerHTML += `<div class="line" style="color:#ff5f56">Error: Module '${text}' not found in kernel.</div>`;}
             output.scrollTop = output.scrollHeight; input.value = "";
         }
     });
