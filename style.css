@@ -952,3 +952,22 @@ select#query-complexity {
         gap: 30px;
     }
 }
+#viewProject {
+    background-color: var(--primary);
+    color: var(--bg-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+#viewProject a {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+#viewProject:hover {
+    background-color: darken(var(--primary), 10%);
+    transform: translateY(-3px);
+}
